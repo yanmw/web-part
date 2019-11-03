@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div class="paragraphs">
+    <p>我是第一个p标签</p>
+    <p>我是第二个p标签</p>
+    <p>我是第三个p标签</p>
+    <p>我是第四个p标签</p>
+</div>
+<div class="span-box">
+    <div>我是一个div块元素</div>
+    <span>我是span标签</span>
+</div>
+
+<br>
+
+<input type="text">
+<input type="text" disabled="">
+
+<input type="radio"name="form1">
+<input type="radio" checked="" name="form1">
+
+<br>
+<a href="#news1">点我让news1变绿色</a>
+<br>
+<a href="#news2">点我让news2变橘红色</a>
+
+<div id="news1">
+    我的id是news1
+</div>
+
+<div id="news2">
+    我的id是news2
+</div>
+<style>
+    /*第一个p标签*/
+    p:first-of-type {
+        color: red;
+    }
+    /*最后一个p标签*/
+    p:last-of-type {
+        color: blue;
+    }
+    /*第二个p标签*/
+    p:nth-of-type(2) {
+        color: gray;
+    }
+    /*倒数第二个p标签*/
+    p:nth-last-of-type(2) {
+        color: green;
+    }
+    /*第一个元素*/
+    p:first-child {
+        font-size: 20px;
+    }
+    /*正数第二个元素*/
+    p:nth-child(2) {
+        font-size: 21px;
+    }
+    /*倒数第二个元素*/
+    p:nth-last-child(2) {
+        font-size: 22px;
+    }
+    /*最后一个元素*/
+    .paragraphs p:last-child {
+        font-size: 23px;
+    }
+    /*鼠标选中的部分*/
+    p::selection {
+        background-color: transparent;
+    }
+    /*span-box这个块元素里除了div元素外，其他元素的背景色设置为粉色*/
+    .span-box :not(div) {
+        background-color: pink;
+    }
+    :root {
+        background: #ebebeb;
+    }
+    /*属性选择器：[attr="value"]*/
+    input[type="text"] {
+        width: 100px;
+    }
+    input[type="text"]:enabled {
+        border: 1px solid green;
+    }
+    input[type="text"]:disabled {
+        border: 1px solid red;
+    }
+    input[type="radio"]{
+        width: 25px;
+        height: 25px;
+    }
+    input[type="radio"]:checked {
+        width: 35px;
+        height: 35px;
+    }
+    /*用target设置new1活动时的颜色*/
+    #news1:target {
+        color: green;
+    }
+    #news2:target {
+        color: orangered;
+    }
+</style>
+</body>
+<script src="js/main.js"></script>
+</html>

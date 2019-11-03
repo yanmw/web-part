@@ -1,0 +1,64 @@
+.div1 #grid1 {
+    height: 200px;
+    background: red linear-gradient(#e66465,#9198e5);
+}
+
+.div2 #grid2 {
+    height: 200px;
+    background: red linear-gradient(to right,red,yellow);
+}
+
+.div3 #grid3 {
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(to bottom right,red,yellow);
+}
+
+.div4 h1 {
+    text-shadow: 5px 5px 5px gray;
+}
+
+.div5 {
+    position: relative;
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.div5 img {
+    width: auto;
+    border: 1px inset #8a4419;
+}
+
+.div5::after {
+    content: '';
+    position: relative;
+    z-index: -1;
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 15%;
+    height: 100%;
+    bottom: 0;
+}
+
+.div6 {
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.div6 p {
+    white-space: nowrap;
+    width: 20em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px inset red;
+}
+
+.div7 p {
+    width: 15em;
+    border: 1px solid black;
+    word-break: break-all;
+}

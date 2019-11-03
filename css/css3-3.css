@@ -1,0 +1,148 @@
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation: myfirst 5s;
+    -o-animation: myfirst 5s;
+    animation: myfirst 5s;
+}
+
+@keyframes myfirst {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+@-webkit-keyframes myfirst {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation: second 5s linear 2s infinite alternate;
+    -o-animation: second 5s linear 2s infinite alternate;
+    animation: second 5s linear 2s infinite alternate;
+}
+
+@keyframes second {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@-moz-keyframes second {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes second {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@-o-keyframes second {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}

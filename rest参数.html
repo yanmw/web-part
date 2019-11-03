@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   /* function fn(...rest) {
+        console.log(rest)
+    }*/
+
+/*   function fn (a,b,...rest) {
+       console.log(a);
+        console.log(b);
+       console.log(rest);
+
+   }
+
+    fn(1,2,3,4,5,6,[],{});*/
+
+    function fn(a,b,c,...rest) {
+        console.log(arguments.length);
+        console.log(fn.length)
+    }
+
+    fn(1,2,3,4,5,6,[],{})
+</script>
+</body>
+</html>

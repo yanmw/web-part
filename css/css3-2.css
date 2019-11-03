@@ -1,0 +1,106 @@
+.div1 {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.div2 div {
+    width: 100px;
+    height: 75px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.div2 #translate {
+    -webkit-transform: translate(50px, 100px);
+    -moz-transform: translate(50px, 100px);
+    -ms-transform: translate(50px, 100px);
+    -o-transform: translate(50px, 100px);
+    transform: translate(50px, 100px);
+}
+
+.div3 div {
+    width: 100px;
+    height: 75px;
+    background-color: red;
+    border: 1px solid black
+}
+
+.div3 #rotateX {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+}
+
+.div4 div {
+    width: 100px;
+    height: 75px;
+    background-color: red;
+    border: 1px solid black
+}
+
+.div4 #rotateY {
+    -webkit-transform: rotateY(130deg);
+    -moz-transform: rotateY(130deg);
+    -ms-transform: rotateY(130deg);
+    -o-transform: rotateY(130deg);
+    transform: rotateY(130deg);
+}
+
+.div5 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-transition: width 2s;
+    -moz-transition: width 2s;
+    -ms-transition: width 2s;
+    -o-transition: width 2s;
+    transition: width 2s;
+}
+
+.div5:hover {
+    width: 300px;
+}
+
+.div6 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+}
+
+.div6:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.div7 {
+    width: 100px;
+    height: 105px;
+    background-color: red;
+    -webkit-transition: width 1s linear 2s;
+    -moz-transition: width 1s linear 2s;
+    -ms-transition: width 1s linear 2s;
+    -o-transition: width 1s linear 2s;
+    transition: width 1s linear 2s;
+}
+
+.div7:hover {
+    width: 200px;
+}
