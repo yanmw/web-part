@@ -73,11 +73,11 @@
     width: 100px;
     height: 100px;
     background-color: red;
-    -webkit-transition: width 2s, height 2s;
-    -moz-transition: width 2s, height 2s;
-    -ms-transition: width 2s, height 2s;
-    -o-transition: width 2s, height 2s;
-    transition: width 2s, height 2s;
+    -webkit-transition: width 0.5s, height 2s;
+    -moz-transition: width 0.5s, height 2s;
+    -ms-transition: width 0.5s, height 2s;
+    -o-transition: width 0.5s, height 2s;
+    transition: width 0.5s, height 2s;
 }
 
 .div6:hover {
@@ -99,8 +99,47 @@
     -ms-transition: width 1s linear 2s;
     -o-transition: width 1s linear 2s;
     transition: width 1s linear 2s;
+    /*属性意思：宽度-1秒变换完成-线性变化-延迟两秒执行*/
 }
 
 .div7:hover {
     width: 200px;
+}
+
+.scale {
+    margin-left: 100px;
+    margin-top: 100px;
+    border: 1px green solid;
+    width: 200px;
+    height: 100px;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.skew {
+    border: 1px solid brown;
+    width: 100px;
+    height:100px;
+    margin-left: 100px;
+    margin-top: 30px;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    -o-transform: skew(30deg);
+    transform: skew(30deg);
+}
+.transform-origin {
+    margin-top: 100px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    transform-origin: right bottom;
+    -webkit-transform: translate(30px) rotate(60deg) scale(1.1);
+    -moz-transform: translate(30px) rotate(60deg) scale(1.1);
+    -ms-transform: translate(30px) rotate(60deg) scale(1.1);
+    -o-transform: translate(30px) rotate(60deg) scale(1.1);
+    transform: translate(30px) rotate(60deg) scale(1.1);
 }
