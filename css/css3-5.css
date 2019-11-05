@@ -1,0 +1,67 @@
+.resize div {
+    border: 1px solid black;
+    padding: 20px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+}
+
+.box-sizing > .container {
+    border: 1em solid;
+    width: 30em;
+    height: 80px;
+}
+
+.box-sizing > .container > .box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    border: 1em solid red;
+}
+
+.outline div {
+    margin: 20px;
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+    border: 2px solid black;
+    outline: 3px solid red;
+    outline-offset: 15px;
+}
+
+.img-border-radius > #img1 {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.img-border-radius > #img2 {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.img-max img {
+    max-width: 100%;
+    height: auto;
+}
+
+.reactive {
+    margin: 25px;
+}
+
+.reactive div.polaroid {
+    width: 80%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px rgba(0,0,0,0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.reactive div.container {
+    text-align: center;
+    padding: 10px 20px;
+}

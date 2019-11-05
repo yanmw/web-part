@@ -122,7 +122,7 @@
 .skew {
     border: 1px solid brown;
     width: 100px;
-    height:100px;
+    height: 100px;
     margin-left: 100px;
     margin-top: 30px;
     -webkit-transform: skew(30deg);
@@ -131,6 +131,7 @@
     -o-transform: skew(30deg);
     transform: skew(30deg);
 }
+
 .transform-origin {
     margin-top: 100px;
     height: 100px;
@@ -142,4 +143,41 @@
     -ms-transform: translate(30px) rotate(60deg) scale(1.1);
     -o-transform: translate(30px) rotate(60deg) scale(1.1);
     transform: translate(30px) rotate(60deg) scale(1.1);
+}
+
+.container {
+    background-color: #eee;
+}
+
+.container div {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+}
+
+.container em {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+    width: 400px;
+    height: 100px;
+    background-color: darkorange;
+}
+
+/*当鼠标悬停到container元素上时，container中的span标签发生变化*/
+.container:hover span {
+    font-size: 30px;
+}
+
+/*空格是子孙选择器；>是儿子选择器。*/
+/*鼠标悬停再container元素的儿子div上时，div后面的挨着div的p元素（如果挨着的不是p元素，则不生效）发生变化*/
+/*  +:element1+element2 选择器匹配出现在 element1 后面的 临近的element2。*/
+.container > div:hover + p {
+    font-size: 20px;
+    color: red;
+}
+/*  ~:element1~element2 选择器匹配出现在 element1 后面的 element2。*/
+.container > div:hover ~ i {
+    font-size: 60px;
+    font-style: normal;
 }
