@@ -4,7 +4,7 @@
     background-color: red;
     -webkit-animation: myfirst 5s;
     -o-animation: myfirst 5s;
-    animation: myfirst 5s;
+    animation: myfirst 5s;/*动画名 动画持续时间*/
 }
 
 @keyframes myfirst {
@@ -32,7 +32,7 @@
     position: relative;
     -webkit-animation: second 5s linear 2s infinite alternate;
     -o-animation: second 5s linear 2s infinite alternate;
-    animation: second 5s linear 2s infinite alternate;
+    animation: second 5s linear 2s infinite alternate;/*动画名、持续时间、动画的速度曲线、延迟几秒执行、动画播放次数、是否在下一周期逆向播放*/
 }
 
 @keyframes second {

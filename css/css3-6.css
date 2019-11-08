@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+.wrap {
+    background-color: #fff;
+    zoom: 1; /*清除浮动时，兼容IE浏览器*/
+}
+
+.content {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+p::before {
+    /*在a元素前加 你好 两个字*/
+    content: "你好，";
+}
+
+a::after {
+    /*显示a标签的链接地址*/
+    content: "(" attr(href) ")";
+}
+
+a::before {
+    content: url("https://www.baidu.com/img/baidu_jgylogo3.gif");
+}
+
+.wrap::after {
+    /*after伪类来清除浮动（解决warp塌陷问题）*/
+    content: '';
+    display: block;
+    clear: both;
+}
+/*暂停图标*/
+#pause {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    border: 6px solid orange;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    background-color: orange;
+}
+
+#pause::before {
+    height: 20px;
+    width: 5px;
+    display: inline-block;
+    content: '';
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+}
