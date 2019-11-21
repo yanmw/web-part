@@ -1,0 +1,70 @@
+.page ul.pagination {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.page ul.pagination li {
+    display: inline;
+}
+
+.page ul.pagination li a {
+    text-decoration: none;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+    border: 1px solid gray;
+}
+
+.page ul.pagination li a.active {
+    background-color: green;
+    color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.page ul.pagination li a:hover:not(.active) {
+    background-color: gray;
+}
+
+/*
+.page {
+    text-align: center;
+}*/
+
+.guidance .breadcrumb {
+    list-style: none;
+    background-color: gray;
+    padding: 8px 16px;
+}
+
+.guidance ul.breadcrumb li {
+    display: inline;
+}
+/*li+li:表示和当前li同级的所有li标签。不包括父级li和子级li。*/
+.guidance ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+.guidance ul.breadcrumb li a {
+    color: green;
+}
+
+.box-size {
+    height: 200px;
+    width: 250px;
+    padding: 50px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}

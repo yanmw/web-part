@@ -1,0 +1,103 @@
+.box .flex-container {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    border: 1px solid black;
+/*
+flex-direction的值有:
+    row：横向从左到右排列（左对齐），默认的排列方式。
+    row-reverse：反转横向排列（右对齐，从后往前排，最后一项排在最前面。
+    column：纵向排列。
+    column-reverse：反转纵向排列，从后往前排，最后一项排在最上面。
+*/
+    flex-direction: row;
+}
+
+.box .flex-container .flex-item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    margin: 10px;
+
+}
+
+.justify-content .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgray;
+    /*justify-content: flex-end;*/
+    /*justify-content: center;*/
+    /*justify-content: space-between;*/
+    /*justify-content: space-around;*/
+
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.justify-content .flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.align-items .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgray;
+
+    /*align-items: stretch;*/
+    /*align-items: flex-start;*/
+    /*align-items: flex-end;*/
+    /*align-items: center;*/
+    align-items: baseline;
+}
+
+.align-items .flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    margin: 10px;
+}
+
+.flex-wrap .flex-container {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    background-color: lightgray;
+
+    /*flex-wrap: nowrap;*/
+    /*flex-wrap: wrap;*/
+    flex-wrap: wrap-reverse;
+}
+
+.flex-wrap .flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.align-content .flex-container {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    flex-wrap: wrap;
+
+    /*align-content: center;*/
+    /*align-content: flex-start;*/
+    /*align-content: flex-end;*/
+    /*align-content: space-between;*/
+    align-content: space-around;
+}
+
+.align-content .flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
