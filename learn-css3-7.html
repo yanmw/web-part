@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/css3-7.css">
+</head>
+<body>
+<!--按钮-->
+<div class="bt">
+    <h2>CSS 按钮</h2>
+    <button>默认按钮</button>
+    <a href="#" class="button" id="bt2">这是一个a标签,变身成按钮</a>
+    <button class="button" id="bt3">通过css改变过的按钮</button>
+    <input type="button" class="button" value="输入框按钮">
+</div>
+
+<div class="page">
+    <h2>简单的分页</h2>
+    <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#" class="active">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">»</a></li>
+    </ul>
+</div>
+</body>
+<script !src="">
+    $('#field38711').bind('change', function () {
+        // getImgURL(this)
+        alert("测试")
+    });
+
+    $("#field38711").click(function () {
+        alert("测试111")
+    })
+
+    $('input[name=field38711]').change(function() { alert("测试222"); });
+
+    //输入框的值改变时触发
+    $("#field38711").on("input",function(e){
+        //获取input输入的值
+        console.log(e.delegateTarget.value);
+        alert("测试333");
+    });
+
+    $("#field38711").bind("input propertychange",function () {
+        console.log("已经输入了"+$("#field38711").val().length+"个字。。。");
+        alert("测试44");
+    });
+    document.getElementById("field38711").onchange = function() {
+        alert("隐藏标签的当期值为：" + this.value);
+    }
+
+    var input = document.getElementById("field38711");
+    input.onpropertychange = function(){
+        console.log("s++");
+        alert("测试55");
+    }
+
+    $("#temp").click(function () {
+        alert("11111");
+    })
+    $("#field38711").attr("type","input");
+    $("#field38711").attr("type","text");
+    document.getElementById("field38711").type="text";
+
+
+    jQuery("#field38711").hide();
+
+    $('#field38711').bind('change paste keyup',function(){
+        alert("111111")
+    });
+    var result1 = $("#field38711").val();
+    alert("result1 = " + result1);
+
+
+
+    var ttt =  document.getElementById("field38711");
+    Object.defineProperty(ttt,"_value",{
+        configurable:true,
+        set:function(value){
+            this.value = value;
+            changeValue();
+        },
+        get:function(){
+            return this.value;
+        }
+    });
+    function changeValue(){
+        alert(ttt.value);
+    }
+
+
+    document.getElementById("field38711").type="text";
+
+
+
+    $('#field38711').bind('change paste keyup',function(){
+        alert("111111")
+        var result1 = $("#field38711").val();
+        alert("result1 = " + result1);
+    });
+    $('#field38711').change();
+
+</script>
+</html>
